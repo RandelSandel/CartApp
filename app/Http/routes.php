@@ -10,9 +10,40 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+// Pages Controller
 
 Route::get('/', 'PagesController@home');
 
+
+
+
+// Vue Routes
+
+get('guestbook', function() {
+	
+	return view('pages.guestbook');
+});
+
+
+
+
+
+
+// API
+
+get('api/messages', function() {
+	return App\Message::all();
+});
+
+post('api/messages', function() {
+	return App\Message::create(Request::all());
+});
+
+
+
+
+
+//Authentication
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
