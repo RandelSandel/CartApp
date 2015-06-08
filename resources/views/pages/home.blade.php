@@ -5,7 +5,7 @@
 @section('content')
 
 <h3>
-	Home Page
+	Home Page and second
 </h3>
 
 
