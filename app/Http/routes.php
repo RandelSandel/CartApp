@@ -25,7 +25,10 @@ get('guestbook', function() {
 });
 
 
+get('dashboard', function() {
 
+	return view('pages.dashboard');
+});
 
 
 
