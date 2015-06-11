@@ -34,9 +34,11 @@ new Vue({
 		sortBy: function(sortKey) {
 			
 			// if the last sortKey is equal to the current sortkey then 
-			// reverse is equal to true else its equal to false
+			// reverse is equal to true else its equal to false.
+			// this will help us decide to reverse a filter action or not
 			this.reverse = (this.sortKey == sortKey) ?  ! this.reverse : false;
 			
+			// this assigns the sorkKey string to the sortkey data/variable
 			this.sortKey = sortKey;
 			
 			
