@@ -8,29 +8,78 @@
 
 
 		<!-- control panel -->
-		<div class="panel panel-default" style="width: 700px; margin: 20px auto 20px">
-		  <div class="panel-body">
-		    <h3>Dashboard</h3>
+		<div class="panel panel-default" style="width: 700px; margin: 20px auto 0px; border: none; -webkit-box-shadow: none">
 
-		    	<!-- filter by button -->
-				<div class="dropdown">
-					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-					Dropdown
-					<span class="caret"></span>
-					</button>
-					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#" v-on="click: sortBy('name')">Name</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#" v-on="click: sortBy('name')">Last edited</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#" v-on="click: sortBy('name')">Most Followed</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#" v-on="click: sortBy('name')">Top Performers</a></li>
-					</ul>
+			<div class="panel-body" style="padding-bottom: 5px;">
+		    
+
+				<!-- Horizontal Columns  -->
+				<div class="row">
+					
+					<!-- navigation links -->
+					<div class="col-xs-12 col-sm-6 col-md-8">
+						<ul class="list-inline">
+							<li>
+								<a href="#" style="padding-right: 10px;" v-on="click: sortBy('name')">Created</a>
+								<a href="#" style="padding-right: 10px;" v-on="click: sortBy('name')">Active</a>
+								<a href="#" style="padding-right: 10px;" v-on="click: sortBy('name')">Following</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Icon Links -->
+					<div class="col-xs-6 col-md-4">
+						<ul class="list-inline">
+							<li style="float: right; padding-right: 0px;">
+								<a href="#" style="padding-right: 20px;"><span class="glyphicon glyphicon-cog" aria-hidden="false" style="font-size: 1.2em;"></span></a>
+								<a href="#" style="padding-right: 0px;"><span class="glyphicon glyphicon-plus" aria-hidden="false" style="font-size: 1.2em;"></span></a>
+								
+							</li>
+						</ul>
+					</div>
+
 				</div>
 
+				</br>
+				</br>
+				</br>
 
-				<!-- search form -->
-				<input v-model="search" class="form-control" placeholder="Search Carts">
+				<!-- Horizontal Columns  -->
+				<div class="row">
+
+					<!-- search form -->
+					<div class="col-xs-12 col-sm-6 col-md-8" style="padding-left: 0px;">
+						<input v-model="search" class="form-control" placeholder="Search Carts">
+					</div>
+
+					<!-- filter by button -->
+					<div class="col-xs-6 col-md-4">
+						<div class="dropdown">
+							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true" style="float: right;">
+							Filter
+							<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#" v-on="click: sortBy('name')">Alphabetical</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#" v-on="click: sortBy('likes')">Most Likes</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#" v-on="click: sortBy('name')">Status</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#" v-on="click: sortBy('name')">Top Performers</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
 			</div>
+
 		</div>
+
+		    	
+
+
+				
+
+
 
 
 

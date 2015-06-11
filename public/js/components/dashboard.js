@@ -14,11 +14,16 @@ new Vue({
 		
 		carts: [
 
-			{ name: 'Arduino Robot', likes: 50, status: 'active' },
-			{ name: 'Ras Pi RFID', likes: 50, status: 'active' },
-			{ name: 'DIY BBQ', likes: 50, status: 'active' },
-			{ name: 'Make a lava lamp', likes: 50, status: 'active' },
-			{ name: 'Boss outfit', likes: 50, status: 'down' }
+			{ name: 'Arduino Robot', likes: 70, status: 'active' },
+			{ name: 'Ras Pi RFID', likes: 5, status: 'active' },
+			{ name: 'DIY BBQ', likes: 55, status: 'active' },
+			{ name: 'Make a lava lamp', likes: 12, status: 'active' },
+			{ name: 'Boss outfit', likes: 26, status: 'down' },
+			{ name: 'Smash Robot', likes: 62, status: 'active' },
+			{ name: 'Beef Ribs', likes: 5, status: 'down' },
+			{ name: 'Phone', likes: 31, status: 'active' },
+			{ name: 'Bed made with air', likes: 1, status: 'active' },
+			{ name: 'Light sensor', likes: 22, status: 'down' }
 
 		]
 

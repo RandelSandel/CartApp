@@ -32,7 +32,7 @@
 		</div>
 		
 		
-		
+		<!-- Submit button -->
 		<div class="form-group" v-if="! submitted">
 			<button type="submit" class="btn btn-default" v-attr="disabled: errors">Sign Guestbook</button>
 		</div>
